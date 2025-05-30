@@ -1,0 +1,53 @@
+<!-- 테이블(표) -->
+!DOCTYPE html>
+<html lang="ko">
+<head>
+        <style>
+        table {
+            border-collapse: collapse; /* 테두리 겹침 제거 */
+        }
+        th, td {
+            border: 1px solid black; /* 테두리 설정 */
+            padding: 8px; /* 셀 안쪽 여백 */
+            width: 100px; /* 셀 너비 */
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>이름</th>
+                <th>나이</th>
+                <th colspan="2">직업</th>
+                
+            </tr>
+        </thead>
+        <tbody> 
+        <tr>
+            <td>1</td>
+            <td>홍길동</td>
+            <td>30</td>
+            <td>개발자</td>
+            <td>강사</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td rowspan="2">홍길동</td>
+            <td rowspan="2">31</td>
+            <td colspan="2">개발자</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td colspan="2">강사2</td>
+        </tr>
+        </tbody>
+         
+
+    </table>
+</body>
+</html>
